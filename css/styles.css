@@ -1,0 +1,129 @@
+:root {
+  --general-color: #626262;
+  --rubric-color: #b4ad9e;
+  --accent-color: #03a9f4;
+  --general-font: 'Playfair Display', serif;
+  --rubric-font: 'Ubuntu', sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0px;
+}
+
+.list {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+/* HEADER NAV */
+
+.site-nav .link {
+  display: block;
+  padding-left: 62px;
+  padding-right: 62px;
+  padding-top: 77px;
+  padding-bottom: 102px;
+  font-size: 14px;
+  line-height: 1.7;
+  text-transform: uppercase;
+  color: var(--general-color);
+  font-family: var(--general-font);
+  text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.page-header {
+  min-height: 202px;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container */
+
+.container {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* MAIN SECTION*/
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-item {
+  margin-right: 60px;
+  margin-bottom: 132px;
+  flex-basis: calc(50% - 30px);
+  flex-grow: 0;
+}
+
+.main-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.main-item:nth-last-child(-n + 2) {
+  margin-bottom: 0;
+}
+
+.main .rubric {
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: var(--rubric-color);
+  font-family: var(--rubric-font);
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.main .item-title {
+  font-size: 30px;
+  line-height: 1.2;
+  color: var(--general-color);
+  font-family: var(--general-font);
+  margin-bottom: 40px;
+}
+
+.main .item-description {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--general-color);
+  font-family: var(--general-font);
+}
+
+.flex-button {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--general-color);
+  font-family: var(--general-font);
+  cursor: pointer;
+  margin-top: 58px;
+  margin-bottom: 70px;
+  border: 1px solid var(--general-color);
+  padding: 22px 36px;
+  min-height: 60px;
+}
