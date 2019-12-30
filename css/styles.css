@@ -14,14 +14,16 @@ html {
   box-sizing: inherit;
 }
 
-body {
-  margin: 0px;
-}
-
 .list {
   margin: 0px;
   padding: 0px;
   list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* HEADER NAV */
@@ -58,9 +60,11 @@ body {
 /* Container */
 
 .container {
-  width: 900px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 150px;
+  padding-right: 150px;
 }
 
 /* MAIN SECTION*/
