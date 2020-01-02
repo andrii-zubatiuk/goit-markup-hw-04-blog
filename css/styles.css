@@ -130,4 +130,5 @@ img {
   border: 1px solid var(--general-color);
   padding: 22px 36px;
   min-height: 60px;
+  background-color: #fff;
 }
